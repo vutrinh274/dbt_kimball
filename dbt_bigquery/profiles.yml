@@ -1,0 +1,12 @@
+dbt_bigquery:
+  outputs:
+    my_output:
+      type: bigquery
+      method: service-account
+      project: your-project
+      dataset: your-dataset
+      keyfile: your-keyfile
+      threads: 10
+  target: my_output
+
+  
